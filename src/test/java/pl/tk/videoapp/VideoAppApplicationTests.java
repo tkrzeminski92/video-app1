@@ -1,4 +1,4 @@
-package pl.bykowski.videoapp;
+package pl.tk.videoapp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

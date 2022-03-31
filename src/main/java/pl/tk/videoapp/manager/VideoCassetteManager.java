@@ -1,11 +1,11 @@
-package pl.bykowski.videoapp.manager;
+package pl.tk.videoapp.manager;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
-import pl.bykowski.videoapp.dao.VideoCassetteRepo;
-import pl.bykowski.videoapp.dao.entity.VideoCassette;
+import pl.tk.videoapp.dao.VideoCassetteRepo;
+import pl.tk.videoapp.dao.entity.VideoCassette;
 
 import java.time.LocalDate;
 import java.util.Optional;

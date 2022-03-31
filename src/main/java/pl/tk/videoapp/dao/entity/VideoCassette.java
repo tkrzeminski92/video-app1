@@ -1,4 +1,4 @@
-package pl.bykowski.videoapp.dao.entity;
+package pl.tk.videoapp.dao.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

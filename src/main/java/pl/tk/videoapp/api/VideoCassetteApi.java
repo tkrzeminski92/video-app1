@@ -1,9 +1,9 @@
-package pl.bykowski.videoapp.api;
+package pl.tk.videoapp.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pl.bykowski.videoapp.dao.entity.VideoCassette;
-import pl.bykowski.videoapp.manager.VideoCassetteManager;
+import pl.tk.videoapp.dao.entity.VideoCassette;
+import pl.tk.videoapp.manager.VideoCassetteManager;
 import java.util.Optional;
 
 @RestController
