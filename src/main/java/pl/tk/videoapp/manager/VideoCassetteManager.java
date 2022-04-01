@@ -4,10 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 import pl.tk.videoapp.dao.VideoCassetteRepo;
 import pl.tk.videoapp.dao.entity.VideoCassette;
+import pl.tk.videoapp.model.GitUsersModel;
 
 import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -41,5 +45,7 @@ public class VideoCassetteManager {
         save(new VideoCassette(1L,"Titanic", LocalDate.of(1995, 1,1)));
         save(new VideoCassette(2L,"Pulp Fiction", LocalDate.of(1990, 2,2)));
     }
+
+
 
 }

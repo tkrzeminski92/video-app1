@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pl.tk.videoapp.dao.entity.VideoCassette;
 import pl.tk.videoapp.manager.VideoCassetteManager;
+import pl.tk.videoapp.model.GitUsersModel;
+
 import java.util.Optional;
 
 @RestController
@@ -36,6 +38,13 @@ public class VideoCassetteApi {
     @PutMapping
     public VideoCassette updateVideo(@RequestBody VideoCassette videoCassette) {
         return videoCassettes.save(videoCassette);
+    }
+
+    @GetMapping("/user")
+    public GitUsersModel getData(@RequestParam(name="login") String login){
+        GitUsersModel gitUsersModel = new GitUsersModel().test(login);
+        return gitUsersModel;
+
     }
 
     @DeleteMapping
